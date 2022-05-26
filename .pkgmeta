@@ -50,3 +50,4 @@ move-folders:
 tools-used:
     - libdatabroker-1-1
 
+enable-toc-creation: yes

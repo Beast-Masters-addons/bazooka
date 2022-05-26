@@ -17,10 +17,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        game_version: [ 'classic', 'bcc', 'retail' ]
 
     env:
       WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
@@ -32,8 +28,6 @@ jobs:
 
       - name: WoW Packager
         uses: BigWigsMods/packager@v2.0.3
-        with:
-          args: -g ${{ matrix.game_version }}
 
       - uses: actions/upload-artifact@v3
         with:
