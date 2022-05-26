@@ -15,6 +15,7 @@
 ## X-License: Public Domain
 ## X-RelSite-WoWI: 14767
 ## X-Credits: ckknight for the original FuBar design
+## X-Curse-Project-ID: 20695
 
 #@no-lib-strip@
 libs\LibStub-1.0\LibStub.lua
